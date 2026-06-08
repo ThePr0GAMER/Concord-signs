@@ -570,6 +570,26 @@ h2 {
     border-bottom: 2px solid var(--accent-color);
 }
 
+.frame-product-mini-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.readability-visual {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.readability-img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 .frame-type ul {
     list-style: none;
     padding: 0;
