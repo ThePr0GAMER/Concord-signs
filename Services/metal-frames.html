@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Sign Frames | Concord Signs & Graphics | Detroit</title>
+    <meta name="description" content="Metal sign frames for outdoor use in Detroit. Folding frames, slide-in frames, T-bar stakes, top and bottom riders, and wire stakes. Powder-coated steel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="service-page.css">
+    <style>
+        /* Frame Showcase — Gallery Cards */
+        .frame-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .frame-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .frame-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+        }
+
+        .frame-card .card-images {
+            display: flex;
+            gap: 10px;
+            padding: 20px 20px 0 20px;
+            justify-content: center;
+            align-items: flex-end;
+            min-height: 160px;
+            background: #fafbfc;
+        }
+
+        .frame-card .card-images img {
+            max-height: 140px;
+            width: auto;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            object-fit: contain;
+        }
+
+        .frame-card .card-body {
+            padding: 18px 20px 20px;
+        }
+
+        .frame-card .card-body h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .frame-card .card-body h3::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: var(--accent-color);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .frame-card .card-body .frame-models {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        .frame-card .card-body .frame-models li {
+            font-size: 0.88rem;
+            color: #555;
+            padding: 3px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .frame-card .card-body .frame-models li::before {
+            content: '—';
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Full-width hero stamp image */
+        .hero-stamp {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: linear-gradient(135deg, #f5f7fa, #eef2f7);
+            border-radius: 12px;
+            padding: 30px 35px;
+            margin-bottom: 35px;
+            border: 1px solid var(--border-color);
+        }
+
+        .hero-stamp img {
+            width: 140px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            flex-shrink: 0;
+        }
+
+        .hero-stamp .stamp-text {
+            flex: 1;
+        }
+
+        .hero-stamp .stamp-text h2 {
+            font-size: 1.3rem;
+            margin-bottom: 6px;
+            border: none;
+            padding: 0;
+        }
+
+        .hero-stamp .stamp-text p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .frame-showcase {
+                grid-template-columns: 1fr;
+            }
+            .hero-stamp {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            .hero-stamp img {
+                width: 120px;
+            }
+            .frame-card .card-images {
+                min-height: 120px;
+            }
+            .frame-card .card-images img {
+                max-height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="service-header">
+        <div class="container">
+            <a href="../index.html" class="logo-text">Concord <span class="accent">Signs</span></a>
+            <a href="tel:+13133665566" class="btn btn-outline">(313) 366-5566</a>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <h1>Metal Sign Frames</h1>
+            <p class="subtitle">Heavy-duty powder-coated steel sign frames for outdoor use. Available in folding, slide-in, stake, and rider configurations.</p>
+        </div>
+    </section>
+
+    <main class="service-main">
+        <div class="container">
+            <div class="service-content">
+                <p class="service-desc">Our metal sign frames are constructed of 3/4" angle iron steel, powder-coated black for durability. Perfect for outdoor real estate signs, construction site signs, and permanent outdoor signage. All frames are built to last.</p>
+
+                <!-- Hero stamp — step-stake as section logo -->
+                <div class="hero-stamp">
+                    <img src="../images/step-stake-signs_small.jpg" alt="Wire Stake Sign">
+                    <div class="stamp-text">
+                        <h2>Built Tough for Detroit</h2>
+                        <p>Every frame is fabricated from heavy-gauge steel and finished with a durable black powder coat. Whether you need a portable folding frame or a permanent stake installation, we've got the right solution for your signage.</p>
+                    </div>
+                </div>
+
+                <!-- Frame Showcase Cards -->
+                <div class="frame-showcase">
+
+                    <!-- Slide-In Frames -->
+                    <div class="frame-card">
+                        <div class="card-images">
+                            <img src="../images/metal-frames.gif" alt="Slide In Frame">
+                            <img src="../images/Slide-in.gif" alt="Slide In Frame diagram">
+                        </div>
+                        <div class="card-body">
+                            <h3>Slide-In Frames</h3>
+                            <p style="font-size:0.88rem;color:#666;margin:0;">Sign slides into built-in channels for a clean, secure fit.</p>
+                            <ul class="frame-models">
+                                <li><strong>RF1824SI</strong> — 18"×24"</li>
+                                <li><strong>RF2436SI</strong> — 24"×36"</li>
+                                <li><strong>RF3624SI</strong> — 36"×24"</li>
+                                <li><strong>RF4848SI</strong> — 48"×48"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Folding Frames -->
+                    <div class="frame-card">
+                        <div class="card-images">
+                            <img src="../images/metal-frames-2.gif" alt="Folding Frame">
+                        </div>
+                        <div class="card-body">
+                            <h3>Folding Frames</h3>
+                            <p style="font-size:0.88rem;color:#666;margin:0;">Hinged design folds flat for easy transport and storage.</p>
+                            <ul class="frame-models">
+                                <li><strong>RF1824F</strong> — 18"×24"</li>
+                                <li><strong>RF2436F</strong> — 24"×36"</li>
+                                <li><strong>RF3624F</strong> — 36"×24"</li>
+                                <li><strong>RF4848F</strong> — 48"×48"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- T-Bar Stake -->
+                    <div class="frame-card">
+                        <div class="card-images">
+                            <img src="../images/metal-frames-3.jpg" alt="T-Bar Stake">
+                        </div>
+                        <div class="card-body">
+                            <h3>T-Bar Stake</h3>
+                            <p style="font-size:0.88rem;color:#666;margin:0;">Stake mounts directly into the ground for quick installation.</p>
+                            <ul class="frame-models">
+                                <li><strong>TS42</strong> — 42" T-Bar Stake</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Top & Bottom Rider -->
+                    <div class="frame-card">
+                        <div class="card-images">
+                            <img src="../images/metal-frames-4.gif" alt="Top and Bottom Rider">
+                        </div>
+                        <div class="card-body">
+                            <h3>Top &amp; Bottom Rider</h3>
+                            <p style="font-size:0.88rem;color:#666;margin:0;">Rides on top of an existing post — top and bottom clips included.</p>
+                            <ul class="frame-models">
+                                <li><strong>RF1824TBR</strong> — 18"×24"</li>
+                                <li><strong>RF2436TBR</strong> — 24"×36"</li>
+                                <li><strong>RF3624TBR</strong> — 36"×24"</li>
+                                <li><strong>RF4848TBR</strong> — 48"×48"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Top Rider -->
+                    <div class="frame-card">
+                        <div class="card-images">
+                            <img src="../images/top rider.gif" alt="Top Rider">
+                        </div>
+                        <div class="card-body">
+                            <h3>Top Rider</h3>
+                            <p style="font-size:0.88rem;color:#666;margin:0;">Mounts to the top of an existing post or frame.</p>
+                            <ul class="frame-models">
+                                <li><strong>RF1824TR</strong> — 18"×24"</li>
+                                <li><strong>RF2436TR</strong> — 24"×36"</li>
+                                <li><strong>RF3624TR</strong> — 36"×24"</li>
+                                <li><strong>RF4848TR</strong> — 48"×48"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Rider -->
+                    <div class="frame-card">
+                        <div class="card-images">
+                            <img src="../images/Bottom rider.gif" alt="Bottom Rider">
+                        </div>
+                        <div class="card-body">
+                            <h3>Bottom Rider</h3>
+                            <p style="font-size:0.88rem;color:#666;margin:0;">Sits at the base of a post for ground-level signage.</p>
+                            <ul class="frame-models">
+                                <li><strong>RF1824BR</strong> — 18"×24"</li>
+                                <li><strong>RF2028BR</strong> — 20"×28"</li>
+                                <li><strong>RF2436BR</strong> — 24"×36"</li>
+                                <li><strong>RF3624BR</strong> — 36"×24"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Wire Stakes -->
+                    <div class="frame-card">
+                        <div class="card-images">
+                            <img src="../images/step-stake-signs_small.jpg" alt="Wire Stake">
+                            <img src="../images/Stake-Wire.jpg" alt="Wire Stake close-up">
+                        </div>
+                        <div class="card-body">
+                            <h3>Wire Stakes</h3>
+                            <p style="font-size:0.88rem;color:#666;margin:0;">9-gauge galvanized wire stakes for temporary yard signs.</p>
+                            <ul class="frame-models">
+                                <li><strong>24"h × 10"w</strong> — Galvanized wire stake</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cta-section">
+                    <h2>Call for Pricing</h2>
+                    <p>Contact us for current pricing on all frame types.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+13133665566" class="btn btn-primary">Call (313) 366-5566</a>
+                        <a href="../index.html#faq" class="btn btn-secondary">View Help & FAQ</a>
+                        <a href="../index.html" class="btn btn-secondary">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="service-footer">
+        <div class="container">
+            <p>&copy; 2025 Concord Signs & Graphics | (313) 366-5566 | <a href="mailto:concord@comcast.net">concord@comcast.net</a></p>
+            <p>3121 Caniff Ave, Hamtramck, MI 48212</p>
+        </div>
+    </footer>
+
+    <a href="tel:+13133665566" class="sticky-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        Call Now
+    </a>
+</body>
+</html>
