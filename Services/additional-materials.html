@@ -7,8 +7,151 @@
     <meta name="description" content="Dibond ACM, Sintra PVC, clear lamination, and LED strip lighting for signs in Detroit. Premium materials for professional signage projects.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="service-page.css">
+    <style>
+        .material-section {
+            background: var(--white);
+            border-radius: 14px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        .material-section-header {
+            background: linear-gradient(135deg, var(--primary-color), #2c3e50);
+            color: var(--white);
+            padding: 22px 30px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .material-section-header .mat-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--accent-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .material-section-header h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--white);
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+        .material-section-body {
+            padding: 25px 30px 30px;
+        }
+        .material-section-body .desc {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+        .mat-main-img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 18px;
+            display: block;
+            max-height: 320px;
+            object-fit: cover;
+        }
+        .color-swatch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .color-swatch {
+            background: var(--light-gray);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            padding: 12px 10px 10px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .color-swatch:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .color-swatch img {
+            width: 100%;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 4px;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .color-swatch .swatch-label {
+            font-size: 0.72rem;
+            color: #666;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+        .mat-image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-bottom: 15px;
+        }
+        .mat-image-grid img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .mat-image-grid img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+        }
+        .specs-list {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .specs-list li {
+            background: var(--light-gray);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 5px 14px;
+            font-size: 0.8rem;
+            color: #555;
+            font-weight: 500;
+        }
+        .specs-list li strong {
+            color: var(--primary-color);
+        }
+        .thickness-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-right: 4px;
+        }
+        @media (max-width: 768px) {
+            .material-section-header { padding: 16px 18px; }
+            .material-section-body { padding: 18px; }
+            .mat-image-grid { grid-template-columns: 1fr; }
+            .color-swatch-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+        }
+    </style>
 </head>
 <body>
     <header class="service-header">
@@ -17,74 +160,106 @@
             <a href="tel:+13133665566" class="btn btn-outline">(313) 366-5566</a>
         </div>
     </header>
-
     <section class="service-hero">
         <div class="container">
             <h1>Additional Sign Materials</h1>
-            <p class="subtitle">Premium sign-making materials including Dibond ACM, Sintra PVC, clear lamination, and LED strip lighting for all your signage projects.</p>
+            <p class="subtitle">Premium sign-making materials — Dibond ACM, Sintra PVC, clear lamination, and LED strip lighting for all your signage projects.</p>
         </div>
     </section>
-
     <main class="service-main">
         <div class="container">
-            <div class="service-content">
-                <p class="service-desc">We offer a range of professional sign-making materials to complement any project. From aluminum composite panels to high-intensity LED lighting, we have the materials you need.</p>
+            <div class="service-content" style="padding-bottom:20px;">
+                <p class="service-desc">We offer a range of professional sign-making materials to complement any project. From aluminum composite panels to high-intensity LED lighting, we have the materials you need — all available for pickup or delivery in Metro Detroit.</p>
 
-                <div class="pricing-section">
-                    <h2>Dibond (ACM) — Aluminum Composite Material</h2>
-                    <div class="image-section" style="margin-bottom: 15px;">
-                        <div class="image-grid" style="grid-template-columns: 1fr;">
-                            <img src="../images/dibond.jpg" alt="Dibond ACM Panel">
-                        </div>
+                <div class="material-section">
+                    <div class="material-section-header">
+                        <div class="mat-icon">&#9670;</div>
+                        <h2>Dibond (ACM) — Aluminum Composite Material</h2>
                     </div>
-                    <p class="pricing-desc">Aluminum composite — two sheets of .010" aluminum with thermoplastic core. Impact & fire resistant, waterproof, lightweight. Stocked in 4'×8', 4'×10', 4'×12', 5'×10', 5'×12' sheets.</p>
+                    <div class="material-section-body">
+                        <img src="../images/dibond.jpg" alt="Dibond ACM Panel" class="mat-main-img">
+                        <p class="desc">Aluminum composite material — two sheets of .010" aluminum with a thermoplastic core. Impact resistant, fire resistant, waterproof, and lightweight. The industry standard for professional outdoor signage.</p>
+                        <ul class="specs-list">
+                            <li><strong>4'×8'</strong> sheets</li>
+                            <li><strong>4'×10'</strong> sheets</li>
+                            <li><strong>4'×12'</strong> sheets</li>
+                            <li><strong>5'×10'</strong> sheets</li>
+                            <li><strong>5'×12'</strong> sheets</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="pricing-section">
-                    <h2>Sintra (PVC) — Foamed PVC Board</h2>
-                    <div class="image-section" style="margin-bottom: 15px;">
-                        <div class="image-row">
-                            <img src="../images/sintra-1.gif" alt="Sintra PVC Sample 1">
-                            <img src="../images/sintra-2.gif" alt="Sintra PVC Sample 2">
-                            <img src="../images/sintra-3.gif" alt="Sintra PVC Sample 3">
-                            <img src="../images/sintra-4.gif" alt="Sintra PVC Sample 4">
-                            <img src="../images/sintra-5.gif" alt="Sintra PVC Sample 5">
-                            <img src="../images/sintra-6.gif" alt="Sintra PVC Sample 6">
-                            <img src="../images/sintra-7.gif" alt="Sintra PVC Sample 7">
-                            <img src="../images/sintra-8.gif" alt="Sintra PVC Sample 8">
-                            <img src="../images/sintra-9.gif" alt="Sintra PVC Sample 9">
-                            <img src="../images/sintra-10.gif" alt="Sintra PVC Sample 10">
+                <div class="material-section">
+                    <div class="material-section-header">
+                        <div class="mat-icon">&#9632;</div>
+                        <h2>Sintra (PVC) — Foamed PVC Board</h2>
+                    </div>
+                    <div class="material-section-body">
+                        <p class="desc">Foamed closed-cell PVC with excellent strength-to-weight ratio. Ideal for indoor and outdoor signage, displays, and point-of-purchase applications. Available in 4'×8' sheets.</p>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+                            <span class="thickness-badge">3mm</span>
+                            <span class="thickness-badge">6mm</span>
+                        </div>
+                        <p style="font-size:0.85rem;color:#666;margin-bottom:10px;font-weight:600;">Available Colors:</p>
+                        <div class="color-swatch-grid">
+                            <div class="color-swatch"><img src="../images/sintra-1.gif" alt="Beige"><span class="swatch-label">Beige</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-2.gif" alt="Black"><span class="swatch-label">Black</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-3.gif" alt="Blue"><span class="swatch-label">Blue</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-4.gif" alt="Dark Blue"><span class="swatch-label">Dark Blue</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-5.gif" alt="Dark Gray"><span class="swatch-label">Dark Gray</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-6.gif" alt="Green"><span class="swatch-label">Green</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-7.gif" alt="Light Gray"><span class="swatch-label">Light Gray</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-8.gif" alt="Red"><span class="swatch-label">Red</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-9.gif" alt="White"><span class="swatch-label">White</span></div>
+                            <div class="color-swatch"><img src="../images/sintra-10.gif" alt="Yellow"><span class="swatch-label">Yellow</span></div>
                         </div>
                     </div>
-                    <p class="pricing-desc">Foamed closed cell PVC. Excellent strength-to-weight ratio. Available in 4'×8' sheets in 3mm and 6mm thicknesses. Colors: Beige, Black, Blue, Dark Blue, Dark Gray, Green, Light Gray, Red, White, Yellow.</p>
                 </div>
 
-                <div class="pricing-section">
-                    <h2>Clear Lamination</h2>
-                    <div class="image-section" style="margin-bottom: 15px;">
-                        <div class="image-grid" style="grid-template-columns: 1fr 1fr;">
-                            <img src="../images/lam-1.jpg" alt="Clear Lamination 1">
-                            <img src="../images/lam-2.jpg" alt="Clear Lamination 2">
-                        </div>
+                <div class="material-section">
+                    <div class="material-section-header">
+                        <div class="mat-icon">&#10070;</div>
+                        <h2>Clear Lamination</h2>
                     </div>
-                    <p class="pricing-desc">UV protection up to 4 years. Clear adhesive back that won't distort image quality. Ideal for vehicle graphics, front-lit signage, retail displays, and large graphic applications.</p>
+                    <div class="material-section-body">
+                        <div class="mat-image-grid">
+                            <img src="../images/lam-1.jpg" alt="Clear Lamination application">
+                            <img src="../images/lam-2.jpg" alt="Clear Lamination detail">
+                        </div>
+                        <p class="desc">UV protection up to 4 years. Clear adhesive back that won't distort image quality. Ideal for vehicle graphics, front-lit signage, retail displays, and large graphic applications.</p>
+                        <ul class="specs-list">
+                            <li><strong>UV Protection</strong> up to 4 years</li>
+                            <li><strong>Clear adhesive</strong> — no distortion</li>
+                            <li><strong>Vehicle graphics</strong> ready</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="pricing-section">
-                    <h2>LED Strip Lighting</h2>
-                    <div class="image-section" style="margin-bottom: 15px;">
-                        <div class="image-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="material-section">
+                    <div class="material-section-header">
+                        <div class="mat-icon">&#9889;</div>
+                        <h2>LED Strip Lighting</h2>
+                    </div>
+                    <div class="material-section-body">
+                        <div class="mat-image-grid">
                             <img src="../images/led-1.jpg" alt="LED Modules">
                             <img src="../images/led-2.jpg" alt="Indoor LED Strip">
-                            <img src="../images/led-3.jpg" alt="RGB LED Strip">
-                            <img src="../images/led-4.jpg" alt="Outdoor LED Strip">
+                            <img src="../images/led-3.jpg" alt="RGB Color Changing LED Strip">
+                            <img src="../images/led-4.jpg" alt="Outdoor Waterproof LED Strip">
                         </div>
+                        <p class="desc">Flexible, high-intensity LED strips. Waterproof and color-changing options available. Perfect for storefronts, cove lighting, interior lighting, exhibit lighting, and cabinet lighting.</p>
+                        <ul class="specs-list">
+                            <li><strong>Waterproof</strong> options</li>
+                            <li><strong>RGB color-changing</strong> available</li>
+                            <li><strong>Indoor &amp; outdoor</strong> rated</li>
+                            <li><strong>Cut-to-length</strong> strips</li>
+                        </ul>
                     </div>
-                    <p class="pricing-desc">Flexible, high-intensity LED strips. Waterproof and color-changing options available. Perfect for store fronts, cove lighting, interior lighting, exhibit lighting, and cabinet lighting.</p>
                 </div>
 
-                <div class="cta-section">
+                <div class="cta-section" style="margin-top:10px;">
                     <h2>Ready to Order?</h2>
+                    <p>Contact us for pricing and availability on all materials.</p>
                     <div class="cta-buttons">
                         <a href="tel:+13133665566" class="btn btn-primary">Call (313) 366-5566</a>
                         <a href="../index.html#faq" class="btn btn-secondary">View Help & FAQ</a>
@@ -94,14 +269,12 @@
             </div>
         </div>
     </main>
-
     <footer class="service-footer">
         <div class="container">
             <p>&copy; 2025 Concord Signs & Graphics | (313) 366-5566 | <a href="mailto:concord@comcast.net">concord@comcast.net</a></p>
             <p>3121 Caniff Ave, Hamtramck, MI 48212</p>
         </div>
     </footer>
-
     <a href="tel:+13133665566" class="sticky-call-btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
         Call Now
